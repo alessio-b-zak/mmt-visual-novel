@@ -19,7 +19,7 @@
 
 /* General Style */
 body {
-
+	font-family: 'Anonymous Pro', monospace;
 }
 
 /* Simple Button styles*/
@@ -97,8 +97,12 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
+	background-color: aquamarine;
+	margin: 2%;
+	width: 96%;
+	min-height: 15%;
 }
+
 
 /* Character Name Style */
 [data-ui="who"] {

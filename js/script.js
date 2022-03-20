@@ -69,7 +69,7 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-
+	'ghouse': 'ghouse.png',
 });
 
 
@@ -78,13 +78,21 @@ monogatari.characters ({
 	'y': {
 		name: 'Yui',
 		color: '#5bcaff'
+	},
+	'g': {
+		name: 'Granny',
+		directory: 'granny',
+		sprites: {
+			neutral: 'neutral.png'
+		}
 	}
 });
 
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #f7f6f6 with fadeIn',
+		'show scene ghouse with fadeIn',
+		'show character g neutral at left with fadeIn',
 		'show notification Welcome',
 		{
 			'Input': {
@@ -110,7 +118,7 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'y Hi {{player.name}} Welcome to Monogatari!',
+		'g Hi {{player.name}} Welcome to Monogatari!',
 		{
 			'Choice': {
 				'Dialog': 'y Have you already read some documentation?',
@@ -127,20 +135,20 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'y Thats awesome!',
-		'y Then you are ready to go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+		'g Thats awesome!',
+		'g Then you are ready to go ahead and create an amazing Game!',
+		'g I can’t wait to see what story you’ll tell!',
 		'jump outsideHouse'
 	],
 
 	'No': [
 
-		'y You can do it now.',
+		'g You can do it now.',
 
 		'show message Help',
 
-		'y Go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+		'g Go ahead and create an amazing Game!',
+		'g I can’t wait to see what story you’ll tell!',
 		'test'
 	]
 });
