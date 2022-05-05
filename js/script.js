@@ -78,6 +78,7 @@ monogatari.characters ({
 
 	'g': {
 		name: 'Granny',
+		color: 'rgb(194, 83, 174)',
 		directory: 'granny',
 		sprites: {
 			neutral: 'neutral.png'
