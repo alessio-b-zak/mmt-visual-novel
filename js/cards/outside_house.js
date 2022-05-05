@@ -1,5 +1,6 @@
 monogatari.script ({
     'outsideHouse': [
-        'We\'re outside the house'
+        'show character p neutral at right with fadeIn',
+        'p What is going on???'
     ]
 });

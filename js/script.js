@@ -75,15 +75,19 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	'y': {
-		name: 'Yui',
-		color: '#5bcaff'
-	},
+
 	'g': {
 		name: 'Granny',
 		directory: 'granny',
 		sprites: {
 			neutral: 'neutral.png'
+		}
+	},
+	'p' : {
+		name: '{{player.name}}',
+		directory: 'pc',
+		sprites : {
+			neutral : 'neutral.png'
 		}
 	}
 });
@@ -118,37 +122,19 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'g Hi {{player.name}} Welcome to Monogatari!',
+		'g Hi {{player.name}} You\'re a fucking Dweeb!',
 		{
 			'Choice': {
-				'Dialog': 'y Have you already read some documentation?',
+				'Dialog': 'g How does it feel to be a dweeb you dweeb?',
 				'Yes': {
-					'Text': 'Yes',
-					'Do': 'jump Yes'
+					'Text': 'gpod',
+					'Do': 'jump outsideHouse'
 				},
 				'No': {
-					'Text': 'No',
-					'Do': 'jump No'
+					'Text': 'bad	',
+					'Do': 'jump outsideHouse'
 				}
 			}
 		}
-	],
-
-	'Yes': [
-		'g Thats awesome!',
-		'g Then you are ready to go ahead and create an amazing Game!',
-		'g I can’t wait to see what story you’ll tell!',
-		'jump outsideHouse'
-	],
-
-	'No': [
-
-		'g You can do it now.',
-
-		'show message Help',
-
-		'g Go ahead and create an amazing Game!',
-		'g I can’t wait to see what story you’ll tell!',
-		'test'
 	]
 });
