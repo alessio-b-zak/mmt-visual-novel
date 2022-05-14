@@ -96,8 +96,6 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene ghouse with fadeIn',
-		'show character g neutral at left with fadeIn',
 		'show notification Welcome',
 		{
 			'Input': {
@@ -121,20 +119,6 @@ monogatari.script ({
 					});
 				},
 				'Warning': 'You must enter a name!'
-			}
-		},
-		'g Hi {{player.name}} You\'re a fucking Dweeb!',
-		{
-			'Choice': {
-				'Dialog': 'g How does it feel to be a dweeb you dweeb?',
-				'Yes': {
-					'Text': 'gpod',
-					'Do': 'jump outsideHouse'
-				},
-				'No': {
-					'Text': 'bad	',
-					'Do': 'jump outsideHouse'
-				}
 			}
 		}
 	]
