@@ -120,6 +120,7 @@ monogatari.script ({
 				},
 				'Warning': 'You must enter a name!'
 			}
-		}
+		},
+	    'jump outsideHouse'
 	]
 });
