@@ -1,6 +1,6 @@
 monogatari.script ({
-    'outsideHouse': [
-		'show scene ghouse with fadeIn',
+    'outsideWarehouse': [
+		'show scene warehouse with fadeIn',
         'show character g neutral at left with fadeIn',
         'g {speed:60} So — {pause:500} this is — {pause:500} it’s not much as you can see \
         — but this is my home.',
@@ -11,7 +11,6 @@ monogatari.script ({
         'g But then all the shops got replaced',
         'g EZ-corp food, EZ-corp hair...',
         'g Now, {pause:200} no-one talks to each other, {pause:200} it\'s very sad.',
-        'jump insideHouse'
-
+        'jump outsideHouse'
     ]
 });

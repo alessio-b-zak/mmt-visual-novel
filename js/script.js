@@ -70,6 +70,10 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 	'ghouse': 'ghouse.png',
+	'warehouse': 'warehouse.png',
+	'insideghouse': 'insideghouse.png',
+	'bottomstairs': 'bottomstairs.png',
+	'topstairs': 'topstairs.png'
 });
 
 
@@ -121,6 +125,6 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-	    'jump outsideHouse'
+	    'jump outsideWarehouse'
 	]
 });
